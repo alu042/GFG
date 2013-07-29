@@ -1,4 +1,4 @@
-#+TITLE: GFG-appen
+#+TITLE: GFG-appen, versjon 0.1
 
 * Beskrivelse
 Den offisielle Android-appen til Gyldenpris Fjellturgruppe (www.gyldenpris.org).
