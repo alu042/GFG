@@ -1,0 +1,14 @@
+#+TITLE: GFG-appen
+
+* Beskrivelse
+Den offisielle Android-appen til Gyldenpris Fjellturgruppe (www.gyldenpris.org).
+
+* Funksjonalitet
+** Chat
+Benytter Google Cloud Engine og Google Messaging til å sende og levere meldinger til alle instanser av appen.
+** Bilder
+Henter og viser bilder fra GFGs server/Google Drive-mappe (ikke ferdig implementert. Foreløpig kun et utvalg lokale bilder).
+** Nyheter
+Henter aktuelle nyheter vha. RSS (ikke ferdig implementert. Foreløpig vises kun et relevant Google News-søk.)
+** GFG-quiz
+

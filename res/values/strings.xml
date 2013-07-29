@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GFG</string>
+    <string name="long_app_name">Gyldenpris fjellturgruppe</string>
+    <string name="about">Om</string>
+    <string name="help">Hjelp</string>
+    <string name="counter_heading">GFG gjenforening</string>
+        <string name="game_heading">GFG-Quiz</string>
+
+    <!-- Activities in ActionBar -->
+    <string name="rss">Nyheter</string>
+    <string name="countdown">Nedtelling</string>
+    <string name="images">Bilder</string>
+    <string name="chat">Chat</string>
+    <string name="home">Hjem</string>
+    <string name="game">Spill</string>
+
+</resources>

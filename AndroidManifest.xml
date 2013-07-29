@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.gyldenpris.gfg_proto1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="org.gyldenpris.gfg_proto1.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="org.gyldenpris.cloud_backend.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/GfgTheme"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <activity
+            android:name="org.gyldenpris.gfg_proto1.GfgActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="WebViewActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="GfgActivity" />
+        <activity
+            android:name="ChatActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="GfgActivity" />
+        <activity
+            android:name="ImageActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="GfgActivity" />
+                <activity
+            android:name="GameActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="GfgActivity" />
+        <!--
+        <activity
+            android:name="CounterActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="GfgActivity" />
+        <activity
+            android:name="ChatActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="GfgActivity" >
+        </activity>
+        -->
+
+        <service android:name="org.gyldenpris.cloud_backend.GCMIntentService" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="org.gyldenpris.cloud_backend" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

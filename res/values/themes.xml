@@ -1,0 +1,5 @@
+<resources>
+ <style name="GfgTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar"> 
+  <item name="android:windowBackground">@color/android_green</item>
+ </style>
+</resources>
